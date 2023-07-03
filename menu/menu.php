@@ -2,6 +2,7 @@
           <div class="app-brand demo">
  
           Sistem Penjualan Motor<br>
+		  PT. XYZ
           </div>
 
           <div class="menu-inner-shadow"></div>

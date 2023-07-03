@@ -75,7 +75,7 @@
             <div class="card-body">
               <!-- Logo -->
               <div class="app-brand justify-content-center">
-					<h2>PT XYZ</h2>
+					<h2>PT. XYZ</h2>
               </div>
               <!-- /Logo -->
               <h4 class="mb-2">Welcome to Penjualan Motor! 👋</h4>
