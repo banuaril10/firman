@@ -9,12 +9,12 @@
 
           <ul class="menu-inner py-1">
             <!-- Dashboard -->
-            <li class="menu-item">
+           <!-- <li class="menu-item">
               <a href="dashboard.php" class="menu-link">
                 <i class="menu-icon tf-icons bx bxs-dashboard"></i>
                 <div data-i18n="Analytics">Dashboard</div>
               </a>
-            </li>
+            </li>-->
 			
 			<li class="menu-item">
               <a href="javascript:void(0);" class="menu-link menu-toggle">
