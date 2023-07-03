@@ -97,7 +97,7 @@ table td, table td * {
                                   <label for="emailExLarge" class="form-label">Pilih Motor</label>
                                   <select class="form-select" name="idMotor" required>
 										<option value="">Pilih Motor</option>
-										<?php $querycount =  $connec->query("SELECT * FROM motor");
+										<?php $querycount =  $connec->query("SELECT * FROM motor where idMotor not in (select idMotor from transaksi)");
 										foreach($querycount as $r){ ?>
 										
 										<option value="<?php echo $r['idMotor']; ?>"><?php echo $r['namaMotor']; ?> | <?php echo $r['platNomor']; ?></option>
