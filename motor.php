@@ -149,10 +149,22 @@ table td, table td * {
 					  	$querycount =  $connec->query("SELECT * FROM motor");
 						$no = 1;
 						foreach($querycount as $r){
+						
+							$status = "<font style='color: green; font-weight: bold'>".$r['merkMotor']."</font>";
+							$cekmotor =  $connec->query("SELECT count(*) jum FROM transaksi where 
+							idMotor = '".$r['idMotor']."'");
+							
+							foreach($cekmotor as $cm){
+								$jum = $cm['jum'];
+							}
+							if($jum > 0){
+								
+								$status = "<font style='color: red; font-weight: bold'>".$r['merkMotor']."</font>";
+							}
 						?>
 						<tr>
 						  <td><?php echo $no; ?></td>
-						  <td><?php echo $r['merkMotor']; ?></td>
+						  <td><?php echo $status; ?></td>
 						  <td><?php echo $r['namaMotor']; ?></td>
 						  <td><?php echo $r['jenisMotor']; ?></td>
 						  <td><?php echo $r['platNomor']; ?></td>

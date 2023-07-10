@@ -2,7 +2,7 @@
           <div class="app-brand demo">
  
           Sistem Penjualan Motor<br>
-		  PT. XYZ
+		  CV XYZ
           </div>
 
           <div class="menu-inner-shadow"></div>
